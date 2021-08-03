@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rock Salt", cursive;
+  display: grid;
+  background: url("background.jpg") no-repeat center;
+  justify-content: center;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  color: #60bfbf;
+}
+header {
+  grid-area: header;
+  max-width: 1000px;
+}
+main {
+  grid-area: main;
+  max-width: 1000px;
+}
+footer {
+  grid-area: footer;
+}
+button,
+footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input {
+  height: 80px;
+  width: 400px;
+  font-size: 2em;
+  border-radius: 4px;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 1em;
+  font-weight: bold;
+  color: #60bfbf;
+}
+.add {
+  background-color: #f2dfd8;
+  transition: 1s ease-in;
+}
+.reset {
+  background-color: #f2b3b9;
+  color: white;
+}
+header {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+.hidden {
+  display: none;
+}
+.delete {
+  background-color: none;
+  border-radius: 0px;
+  border: none;
+  padding: 0em;
+  cursor: pointer;
+}
+.list-style {
+  border-bottom: 1px solid green;
+  list-style-position: inside;
+  list-style: square;
+  font-size: 2em;
+}
