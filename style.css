@@ -79,10 +79,13 @@ header {
 }
 @media only screen and (max-width: 500px) {
   body {
-    padding: 10px;
     margin: 10px;
   }
   input {
-    max-width: 350px;
+    max-height: 50px;
+    max-width: 300px;
+  }
+  main {
+    font-size: 0.7em;
   }
 }
