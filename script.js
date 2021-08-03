@@ -9,15 +9,13 @@ const listContainer = document.querySelector (".div-list")
 
 
 
+
 addButton.addEventListener ("click", () => {
-  
     let listElements = document.createElement("li");
-
-
-    if(input.value) {
+      if(input.value) {
      
          listContainer.appendChild (listElements);
-         listElements.innerHTML =`${input.value}`; 
+         listElements.innerHTML += input.value; 
          listElements.classList.add ("list-style")
          input.value = "";
 
@@ -29,22 +27,19 @@ addButton.addEventListener ("click", () => {
             listContainer.removeChild (listElements)
             
         })
-  
-  }
-  
+   }
 })
+
 document.addEventListener ("keydown", (e) => {
+    let listElements = document.createElement("li");
     if (e.keyCode === 13) {
         if(input.value) {
-            listContainer.innerHTML +=    
-            `<ul>
-             <li class ="list-style>${heart}  ${input.value}</li>
-             </ul>`;
-            input.value = "";
+        listContainer.appendChild (listElements);
+        listElements.innerHTML =`${input.value}`; 
+        listElements.classList.add ("list-style")
+        input.value = "";;
         }
-       
-    }
-    
+ }
 })
 
 resetButton.addEventListener ("click", () => {

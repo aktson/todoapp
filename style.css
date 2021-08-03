@@ -15,14 +15,15 @@ body {
     "main"
     "footer";
   color: #60bfbf;
+  margin: 10px;
 }
 header {
   grid-area: header;
-  max-width: 1000px;
+  max-width: 500px;
 }
 main {
   grid-area: main;
-  max-width: 1000px;
+  max-width: 500px;
 }
 footer {
   grid-area: footer;
@@ -33,7 +34,7 @@ footer {
 }
 input {
   height: 80px;
-  width: 400px;
+  max-width: 400px;
   font-size: 2em;
   border-radius: 4px;
   border: none;
@@ -71,8 +72,17 @@ header {
   cursor: pointer;
 }
 .list-style {
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #f2b3b9;
   list-style-position: inside;
   list-style: square;
   font-size: 2em;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 10px;
+    margin: 10px;
+  }
+  input {
+    max-width: 350px;
+  }
 }
