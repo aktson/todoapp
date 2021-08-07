@@ -122,9 +122,6 @@ header {
   font-size: 2em;
 } */
 @media only screen and (max-width: 500px) {
-  body {
-    margin: 10px;
-  }
   input {
     max-height: 50px;
     max-width: 300px;
