@@ -21,9 +21,8 @@ body {
 section {
   max-width: 1000px;
   background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 2ox rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   padding: 10px 40px;
-  margin: 10px;
 }
 header {
   grid-area: header;
@@ -129,5 +128,8 @@ header {
   }
   main {
     font-size: 0.7em;
+  }
+  section {
+    padding: 10px 30px;
   }
 }
