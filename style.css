@@ -23,6 +23,7 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2ox rgba(0, 0, 0, 0.2);
   padding: 10px 40px;
+  margin: 10px;
 }
 header {
   grid-area: header;
