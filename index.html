@@ -7,18 +7,18 @@
     <title>Todo</title>
   </head>
   <body>
-    <header>
-      <h1>To do List</h1>
-      <input type="text" name="text" />
-      <div>
+    <section>
+      <header>
+        <h1>To do List</h1>
+
+        <input type="text" name="text" placeholder="add your task here" />
         <button class="add">Add</button>
-        <button class="reset">Reset</button>
-      </div>
-    </header>
-    <main>
-      <div class="div-list"></div>
-      <div class="delete hidden">❌</div>
-    </main>
+      </header>
+      <main>
+        <ol class="list" draggable="true"></ol>
+        <button class="reset hidden">Reset</button>
+      </main>
+    </section>
     <!-- <footer>designed and developed by ANKSON</footer> -->
     <script src="script.js"></script>
   </body>
