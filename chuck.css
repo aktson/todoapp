@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "Rock Salt", cursive;
+  font-family: "Nunito Sans", sans-serif;
   display: grid;
   background: url("background.jpg") no-repeat center;
   background-size: cover;
@@ -50,12 +50,13 @@ footer {
 }
 input {
   height: 50px;
-  max-width: 500px;
+  max-width: 80px;
   font-size: 2em;
   border: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
   border-radius: 8px;
+  text-align: center;
 }
 ::placeholder {
   font-family: "Rock Salt", cursive;
