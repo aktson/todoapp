@@ -87,7 +87,12 @@ h1 {
 .hidden {
   display: none;
 }
-
+.error {
+  background-color: rgba(255, 0, 0, 0.4);
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
 .list {
   border-radius: 8px;
   margin-bottom: 20px;

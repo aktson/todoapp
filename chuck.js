@@ -7,28 +7,43 @@ const clearBtn = document.querySelector(".clear");
 
 addButton.addEventListener("click",  getJokes) ;
 
+
+
+
 async function getJokes() {
-    const number = document.querySelector("input[type=number]").value;
-    const url = `http://api.icndb.com/jokes/random/${number}`;
-
-
-    const response = await fetch(url);
-    const data = await response.json();
-    const jokes = data.value;
-
- 
-  
-    clearBtn.onclick = function () {
-        location.reload();
+    
+    try {
+        const number = document.querySelector("input[type=number]").value;
+        const url = `http://api.icndb.com/jokes/random/${number}`;
+    
+    
+        const response = await fetch(url);
+        const data = await response.json();
+        const jokes = data.value;
+    
+     
+        clearBtn.onclick = function () {
+            location.reload();
+        }
+       
+        for (let i = 0; i < jokes.length; i++) {
+            listContainer.innerHTML +=  `<li>${jokes[i].joke}</li>`;
+            clearBtn.classList.remove("hidden");
+        }
     }
-
-    jokes.forEach ((joke) => {
-    listContainer.innerHTML +=  `<li>${joke.joke}</li>`;
-    clearBtn.classList.remove("hidden");
-    });
+    catch (error) {
+        listContainer.innerHTML = showError("Opps.. Something went wrong..");
+    }
 }
 
 getJokes();
+function showError (message) {
+    if (!message) {
+        message = "Unknown error";
+    } 
+    return`<p class ="error">${message}</p>`;
+ };
+
 // function getJokes(e) {
 //     e.preventDefault();
 
