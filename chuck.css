@@ -33,89 +33,66 @@ header {
   justify-items: center;
 }
 h1 {
-  margin-top: 20px;
-  font-size: 2em;
+  margin-top: 10px;
+  font-size: 1.5em;
 }
 main {
   grid-area: main;
 }
 footer {
   grid-area: footer;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
+  font-size: 1em;
 }
 button,
 footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 input {
-  height: 50px;
-  max-width: 80px;
-  font-size: 2em;
+  height: 40px;
+  max-width: 60px;
+  font-size: 1.3em;
   border: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
   border-radius: 8px;
   text-align: center;
 }
-::placeholder {
-  font-family: "Rock Salt", cursive;
-  font-size: 0.7em;
-  text-align: center;
-  opacity: 0.4;
-}
-/* .input-button {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  align-items: center;
-} */
+
 .button {
   border: none;
-  padding: 1em;
+  padding: 0.5em;
   font-weight: bold;
   color: white;
-  width: 120px;
-  height: 50px;
+  width: 90px;
+  height: 40px;
   border-radius: 8px;
   background-color: #60bfbf;
-  font-size: 1em;
+  font-size: 0.8em;
 }
-.add {
-  background-color: #60bfbf;
-  transition: 1s ease-in;
-  font-size: 1em;
-}
-.reset {
-  background-color: #f2b3b9;
-  color: white;
 
-  margin-top: 20px;
-}
 header {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
   gap: 10px;
+  align-items: flex-end;
+}
+
+h1 {
+  grid-column: 1/-1;
 }
 
 .hidden {
   display: none;
 }
-.delete {
-  background-color: none;
-  border-radius: 0px;
-  border: none;
-  padding: 0em;
-  cursor: pointer;
-}
+
 .list {
   border-radius: 8px;
   margin-bottom: 20px;
-  margin-top: 80px;
   color: white;
-  font-size: 1.4em;
-
+  font-size: 1em;
   list-style-position: inside;
   padding: 5px;
   list-style-type: decimal;
