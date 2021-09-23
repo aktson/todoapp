@@ -21,7 +21,8 @@ body {
   justify-content: center;
   overflow-x: hidden;
 }
-section {
+header,
+main {
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   padding: 10px;
@@ -115,6 +116,14 @@ h1 {
   font-size: 2em;
 } */
 @media only screen and (max-width: 500px) {
+  header,
+  .label-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   input {
     max-height: 50px;
     max-width: 300px;
@@ -126,5 +135,7 @@ h1 {
     padding: 10px 30px;
     margin: 0;
     max-width: 350;
+    justify-content: center;
+    align-items: center;
   }
 }

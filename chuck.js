@@ -13,7 +13,7 @@ addButton.addEventListener("click",  getJokes) ;
 async function getJokes() {
     try {
         const number = document.querySelector("input[type=number]").value;
-        const url = `http://api.icndb.com/jokes/random/${number}`;
+        const url = `https://api.icndb.com/jokes/random/${number} `;
     
     
         const response = await fetch(url);
