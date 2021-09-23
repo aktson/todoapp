@@ -3,23 +3,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chuck.css" />
     <title>Todo</title>
   </head>
   <body>
     <section>
       <header>
-        <h1>To do List</h1>
-
-        <input type="text" name="text" placeholder="add your task here" />
-        <button class="add">Add</button>
+        <h1>Chuck Norris Joke generator</h1>
+        <div class="label-input">
+          <label for="number">Number of jokes</label>
+          <input type="number" id="number" />
+        </div>
+        <button class="add button">Get jokes</button>
+        <button class="clear button hidden">Clear</button>
       </header>
       <main>
-        <ol class="list" draggable="true"></ol>
-        <button class="reset hidden">Reset</button>
+        <ol class="list"></ol>
       </main>
     </section>
     <footer>designed and developed by ANKSON</footer>
-    <script src="script.js"></script>
+    <script src="chuck.js"></script>
   </body>
 </html>
