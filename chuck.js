@@ -27,6 +27,7 @@ async function getJokes() {
        
         for (let i = 0; i < jokes.length; i++) {
             listContainer.innerHTML +=  `<li>${jokes[i].joke}</li>`;
+            listContainer.classList.add ("main");
             clearBtn.classList.remove("hidden");
         }
     }
